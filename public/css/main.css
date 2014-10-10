@@ -25,7 +25,7 @@ header h1 {
 	padding: 18px;
 }
 
-#content {
+.content {
 	padding: 0 20px 20px 20px;
 	width: 600px;
 	margin: auto;
@@ -50,6 +50,46 @@ input.seach:focus {
 	border: 1px solid #111;
 	background-color: #efefef;
 	outline: none;
+}
+
+.results ul {
+	margin: 20px;
+	list-style-type: none;
+}
+
+.results li {
+	min-height: 100px;
+	margin-bottom: 20px;
+}
+
+.beer {
+	clear: left;
+	text-align: left;
+	float: left;
+}
+
+.beer .noimg {
+	width: 100px;
+	height: 100px;
+	background-color: #ddd;
+}
+
+.beer img {
+	width: 100px;
+	margin-right: 12px;
+}
+
+.beer span.name {
+	margin-left: 120px;
+	font-size: 1.1em;
+	font-weight: bold;
+	display: block;
+}
+
+.beer span.description {
+	font-size: 0.8em;
+	margin-left: 120px;
+	display: block;
 }
 
 footer {
