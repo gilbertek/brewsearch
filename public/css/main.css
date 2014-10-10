@@ -1,0 +1,60 @@
+body {
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: 'Avenir Next', 'Helvetica', sans-serif;
+	color: #444;
+}
+
+a:link, a:visited {
+	color: #e33;
+}
+
+a:hover, a:active {
+	color: #e44;
+}
+
+header {
+	font-weight: bold;
+	text-align: center;
+}
+
+header h1 {
+	margin: 0;
+	padding: 18px;
+}
+
+#content {
+	padding: 0 20px 20px 20px;
+	width: 600px;
+	margin: auto;
+	text-align: center;
+}
+
+form#beer-search {
+	margin-bottom: 2em;
+}
+
+input.search {
+	padding: 8px;
+	font-size: 1.8em;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border: 1px solid #777;
+	text-indent: 18px;
+	background-color: #fff;
+}
+
+input.seach:focus {
+	border: 1px solid #111;
+	background-color: #efefef;
+	outline: none;
+}
+
+footer {
+	color: #888;
+	font-size: 0.9em;
+	text-align: center;
+	margin: 5em 0 0 1em;
+}
