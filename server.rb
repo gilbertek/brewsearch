@@ -3,6 +3,7 @@ require 'bundler/setup'
 Bundler.require
 require 'sinatra'
 require 'sinatra/reloader' if development?
+Dotenv.load
 
 require_relative './app/services/brewerydb'
 require_relative './app/models/beer'
