@@ -1,9 +1,6 @@
 require 'rubygems'
 require 'bundler/setup'
 Bundler.require
-require 'sinatra'
-require 'sinatra/reloader' if development?
-Dotenv.load
 
 require_relative './app/services/brewerydb'
 require_relative './app/models/beer'
@@ -23,7 +20,7 @@ def do_search(q)
 		# logger.info "Response: #{response.body}"
 		@beers = parse_beers(response)
 
-		logger.info @beers
+		# logger.info @beers
 	else
 		logger.error = "ERROR: #{response.body}"
 		@error = response.body
