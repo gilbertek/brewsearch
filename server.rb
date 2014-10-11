@@ -22,6 +22,8 @@ def do_search(q)
 	if response.code == 200
 		# logger.info "Response: #{response.body}"
 		@beers = parse_beers(response)
+
+		logger.info @beers
 	else
 		logger.error = "ERROR: #{response.body}"
 		@error = response.body
@@ -31,9 +33,7 @@ end
 def parse_beers(response)
 	return [] unless response["data"]
 
-	response["data"].map { |beer_json|
-		Beer.from_json(beer_json)
-		logger.info Beer
+	response["data"].map { |beer_json| Beer.from_json(beer_json)
 	}
 end
 

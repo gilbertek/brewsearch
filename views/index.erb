@@ -24,16 +24,16 @@
 			<% end %>
 			<ul>
 				<% @beers.each do |beer| %>
-				<li class="beer">
-					<% if beer.image_url? %>
-						<img src="<%= beer.image_url %>" alt="<%= beer.name %>"/>
-					<% else %>
-						<span class="noimg"></span>
-					<% end %>
+					<li class="beer">
+						<% if beer.image_url %>
+							<img src="<%= beer.image_url %>" alt="<%= beer.name %>"/>
+						<% else %>
+							<span class="noimg"></span>
+						<% end %>
 
-					<span class="name"><%= beer.name %></span>
-					<span class="description"><%= beer.description %></span>
-				</li>
+						<span class="name"><%= beer.name %></span>
+						<span class="description"><%= beer.description %></span>
+					</li>
 				<% end  if @beers %>
 			</ul>
 
